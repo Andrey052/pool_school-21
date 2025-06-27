@@ -21,3 +21,13 @@ int main(void)
 
     return 0;
 }
+‐------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%03d", abs(n)%10*100 + abs(n)/10%10*10 + abs(n)/100*(n<0?-1:1));
+    return 0;
+}
